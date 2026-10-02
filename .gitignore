@@ -34,3 +34,10 @@ Thumbs.db
 # IDE
 .idea/
 .vscode/
+# Plans and state can contain secrets
+tfplan
+*.tfplan
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
