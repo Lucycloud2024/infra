@@ -46,10 +46,10 @@ data "aws_iam_policy_document" "github_actions_assume_role" {
       test     = "StringLike"
       variable = "token.actions.githubusercontent.com:sub"
       values = [
-        "repo:${var.github_org}/frontend:ref:refs/heads/main",
-        "repo:${var.github_org}/frontend:ref:refs/heads/develop",
-        "repo:${var.github_org}/backend:ref:refs/heads/main",
-        "repo:${var.github_org}/backend:ref:refs/heads/develop",
+        "repo:Lucycloud2024@173856881/frontend@1399668192:ref:refs/heads/main",
+        "repo:Lucycloud2024@173856881/frontend@1399668192:ref:refs/heads/develop",
+        "repo:Lucycloud2024@173856881/backend@1399668878:ref:refs/heads/main",
+        "repo:Lucycloud2024@173856881/backend@1399668878:ref:refs/heads/develop",
       ]
     }
   }
