@@ -239,6 +239,7 @@ run_cmd([
     "--set", f"serviceAccount.annotations.eks\\.amazonaws\\.com/role-arn={ALB_CONTROLLER_ROLE}",
     "--wait", "--timeout", "3m",
 ])
+import time as _t; _t.sleep(90)  # pods need time to reload the new webhook certificate
 log("ALB webhook certificates refreshed.")
 
 # ---------------------------------------------------------------------------
